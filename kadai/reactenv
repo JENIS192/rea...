@@ -1,0 +1,20 @@
+# --- Ports (server-side only, never sent to the browser) ---
+# Dev server: npm run dev      -> http://localhost:PORT
+PORT=5173
+# Built-site preview: npm run build && npm run preview -> http://localhost:PREVIEW_PORT
+PREVIEW_PORT=4173
+# Interface to listen on. 0.0.0.0 = reachable from other devices; 127.0.0.1 = this machine only
+HOST=0.0.0.0
+
+# --- Public settings, read by Vite at BUILD time. Restart `npm run dev` or re-run the build after editing.
+# Everything prefixed VITE_ is visible to anyone in the built JavaScript. Never put secrets here.
+VITE_STORE_NAME=kadai
+VITE_STORE_NAME_TA=கடை
+VITE_TAGLINE=Everyday things, picked well.
+VITE_SUPPORT_EMAIL=help@kadai.example
+VITE_CURRENCY=INR
+VITE_LOCALE=en-IN
+VITE_FREE_SHIPPING_ABOVE=999
+VITE_SHIPPING_FEE=49
+# Coupons as CODE:PERCENT pairs separated by commas
+VITE_COUPONS=KADAI10:10,WELCOME15:15

@@ -1,0 +1,6 @@
+# Overrides .env when running `npm run build` (the EC2 deploy). Change values for your live site.
+VITE_SUPPORT_EMAIL=help@yourdomain.com
+
+# Port Nginx serves the site on (used by deploy/apply-nginx.sh). 80 = plain http://<EC2_IP>
+# If you change it, open the same port in the EC2 security group.
+NGINX_PORT=80
